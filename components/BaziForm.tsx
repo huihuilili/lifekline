@@ -271,7 +271,7 @@ const BaziForm: React.FC<BaziFormProps> = ({ onSubmit, isLoading }) => {
                   name="apiBaseUrl"
                   value={formData.apiBaseUrl}
                   onChange={handleChange}
-                  placeholder="google/gemini-3-pro-preview"
+                  placeholder="https://openrouter.ai/api/v1"
                   className={`w-full px-3 py-2 border rounded-lg text-xs font-mono outline-none ${formErrors.apiBaseUrl ? 'border-red-500 bg-red-50' : 'border-gray-300 focus:ring-2 focus:ring-gray-400'}`}
                 />
                 {formErrors.apiBaseUrl && <p className="text-red-500 text-xs mt-1">{formErrors.apiBaseUrl}</p>}
